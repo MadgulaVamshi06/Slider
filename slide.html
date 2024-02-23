@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide Show</title>
+<style>
+  #slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="slideshow-container">
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1462221578/photo/puma-portrait.webp?b=1&s=170667a&w=0&k=20&c=4f0m1L9YEvUIlQr50Tuh3hEwtaGO1yM_4342p83Hz8E=" alt="Image 1">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1458014439/photo/long-beaked-common-dolphin-in-the-santa-barbara-channel.webp?b=1&s=170667a&w=0&k=20&c=YBM_zRwWebkshH5MSpYVdU-C4rk5Zlu-e0QUKbUaO_0=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1404698627/photo/mama-fox-posing-with-her-baby-kit.webp?b=1&s=170667a&w=0&k=20&c=TXFyRvEie7F4HH1IQuL-DhxhyXOPGa9OlYjZHNRLPLs=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1409785345/photo/group-of-wildlife-safari-zoo-animals-together-isolated.webp?b=1&s=170667a&w=0&k=20&c=aTlab7ZQgES0eTWt_LLaGAGcspB37jgI1VBJ77YVCFY=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1555169062-013468b47731?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWFsfGVufDB8fDB8fHww" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5pbWFsfGVufDB8fDB8fHww" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1543946207-39bd91e70ca7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1445820200644-69f87d946277?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1709422554/photo/vertical-portrait-of-an-aggressive-copperhead-rat-snake.jpg?s=612x612&w=0&k=20&c=J6ahDAzvAfoJr0ZlyMwNjNVWAorDJJz8xFCo8m4y5os=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/992637094/photo/british-short-hair-cat-and-golden-retriever.jpg?s=612x612&w=0&k=20&c=MPxqqfyY1mhqlrqD9xCC3NA14qSR0DfZnD5SVJxs2Ik=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/521796008/photo/bull-elephant-india.jpg?s=612x612&w=0&k=20&c=06fpZOaN-5ptBIKcOUpLDKc9DuC472efhgWlFJiV59E=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/526297482/photo/indian-peacock-in-ranthambhore-national-park-rajasthan-india.jpg?s=612x612&w=0&k=20&c=abJS-9uL1cNACwjE_ylVvBlzbsQXRQcR_2zOnFUW3yo=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/479667835/photo/background-elephant.jpg?s=612x612&w=0&k=20&c=DwfinIerTq104FXWcBBwegTWcmw8tf18EGqa5IpEyFk=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/1217649450/photo/chicken-or-hen-on-a-green-meadow.jpg?s=612x612&w=0&k=20&c=zRlZTkwoc-aWb3kI10OqlRLbiQw3R3_KUIchNVFgYgw=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/486094898/photo/two-fruit-bats.jpg?s=612x612&w=0&k=20&c=YsZYYQx7JfJzfBzlnVD0udFoeiJvfiLgm3uRclhwjKU=" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://media.istockphoto.com/id/588614058/photo/elephants-in-the-forest.jpg?s=612x612&w=0&k=20&c=k03zhtm9WS5a3Jgn46X2UEzbG_cmuFJHrZflZg2y6O4=" alt="Image 2">
+  </div>
+  <!-- Add more slides as needed -->
+</div>
+
+<button class="btn" onclick="toggleSlideShow()">Start/Stop</button>
+<button class="btn" onclick="plusSlides(-1)">Previous</button>
+<button class="btn" onclick="plusSlides(1)">Next</button>
+
+<script>
+  let slideIndex = 0;
+  let slideshowInterval;
+
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    slideshowInterval = setTimeout(showSlides, 2000); // Change slide every 2 seconds
+  }
+
+  function plusSlides(n) {
+    clearTimeout(slideshowInterval);
+    showSlides(slideIndex += n);
+  }
+
+  function toggleSlideShow() {
+    if (slideshowInterval) {
+      clearTimeout(slideshowInterval);
+      slideshowInterval = null;
+    } else {
+      showSlides();
+    }
+  }
+</script>
+
+</body>
+</html>
